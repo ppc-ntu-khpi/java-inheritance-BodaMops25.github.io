@@ -7,8 +7,8 @@ public class Animal {
   protected float age;
 
   public Animal(float sz, float wgt, float ag) {
-      size = sz;
-      weight = wgt;
-      age = ag;
+      this.size = sz;
+      this.weight = wgt;
+      this.age = ag;
   }
 }
