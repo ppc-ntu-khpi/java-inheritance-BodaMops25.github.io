@@ -2,27 +2,13 @@ package domain;
 
 public class Animal {
 
-    protected String name;
+  protected float size;
+  protected float weight;
+  protected float age;
 
-    protected int weight;
-
-    public Animal() {
-        name="generic animal";
-        weight=25;
-    }
-
-    public void eat() {
-        System.out.println("Animal eating...");
-    }
-
-    public void speak() {
-        System.out.println("Animal speaking...");
-    }
-
-    @Override
-    public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
-    }
-
- 
+  public Animal(float sz, float wgt, float ag) {
+      this.size = sz;
+      this.weight = wgt;
+      this.age = ag;
+  }
 }
