@@ -1,15 +1,22 @@
 package test;
 
-import domain.Cat;
+import domain.Bird;
 
 public class TestAnimal {
 
-    public static void main(String[] args) {
-        Cat cat = new Cat("Thomas");
-        System.out.println(cat);
-        cat.hunt();
-        cat.eat();
-        cat.speak();
-        cat.play();
-    }
+  public static void main() {
+      Bird b = new Bird(2, 100);
+      System.out.println(b);
+    
+      flyingAnimal fA = new flyingAnimal('ft1', 15.5, 0)
+      System.out.println(fA);
+    
+      Animal a = new Animal(15, 20, 1)
+      System.out.println(a);
+    
+      b.fly();
+      b.fly();
+      b.eat();
+      b.speak();
+  }
 }
